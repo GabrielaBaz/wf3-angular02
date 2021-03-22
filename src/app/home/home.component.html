@@ -1,0 +1,14 @@
+<div class="card">
+<h1>This is {{user.name}}</h1>
+<img [src]="user.picture" alt="userpic">
+<h2>My name is {{user.name}}</h2>
+<p>I am {{ user.age }} years old</p>
+<p><i class="pi pi-palette"></i></p>
+
+<input pButton class="p-button-text" [(ngModel)]="user.quote">
+
+<p>{{ user.quote }}</p>
+
+<p-multiSelect [options]="cities" [(ngModel)]="selectedCities" optionLabel="name"></p-multiSelect>
+
+</div>
